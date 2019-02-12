@@ -1,13 +1,13 @@
-function tabs($container, $classForActiveBtn, $classForActiveTab, $addAnimate) {
+let tabs = ($container, $classForActiveBtn, $classForActiveTab, $addAnimate) => {
     $container.each(function() {
-        var _container = $(this),
+        let _container = $(this),
             tabsline = _container.find("[data-tabsline]").filter(":first"),
             button = tabsline.find("> *"),
             contentbox = _container.find("[data-contentbox]").filter(":first"),
             content = contentbox.find("> *");
 
         button.on("click", function() {
-            var _thisButton = $(this),
+            let _thisButton = $(this),
                 _i = _thisButton.index(),
                 eqContent = content.eq(_i),
                 siblings = {
