@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Tabbox</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="tabbox" data-tabbox="data-tabbox">
+            <div class="tabbox__nav" data-tabsline="data-tabsline">
+                <div class="btn btn--active">1</div>
+                <div class="btn">2</div>
+                <div class="btn">3</div>
+                <div class="btn">4</div>
+            </div>
+            <div class="tabbox__content" data-contentbox="data-contentbox">
+                <div class="tab tab--active">
+                    <div
+                        class="innertabbox"
+                        data-innertabbox="data-innertabbox"
+                    >
+                        <div
+                            class="innertabbox__nav"
+                            data-tabsline="data-tabsline"
+                        >
+                            <div class="innerbtn innerbtn--active">1</div>
+                            <div class="innerbtn">2</div>
+                            <div class="innerbtn">3</div>
+                            <div class="innerbtn">4</div>
+                        </div>
+                        <div
+                            class="innertabbox__content"
+                            data-contentbox="data-contentbox"
+                        >
+                            <div class="innertab innertab--active">
+                                innercontent 1
+                            </div>
+                            <div class="innertab">innercontent 2</div>
+                            <div class="innertab">innercontent 3</div>
+                            <div class="innertab">innercontent 4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab">content 2</div>
+                <div class="tab">content 3</div>
+                <div class="tab">content 4</div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./tabbox.js"></script>
+    </body>
+</html>

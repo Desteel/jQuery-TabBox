@@ -1,0 +1,60 @@
+.tabbox {
+    border: 2px solid grey;
+}
+.tabbox__nav {
+    display: flex;
+}
+.tabbox__content {
+    background-color: #eff1f3;
+    padding: 5px;
+}
+
+.btn {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #a74752;
+    background-color: #5f2f34;
+    cursor: pointer;
+}
+.btn--active {
+    background-color: red;
+}
+.btn:not(.btn--active):hover {
+    background-color: #a74752;
+}
+
+.tab {
+    min-height: 300px;
+}
+.tab:not(.tab--active) {
+    display: none;
+}
+
+.innertabbox__nav {
+    display: flex;
+}
+.innertabbox__content {
+    border: 2px solid black;
+}
+
+.innerbtn {
+    padding: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.innerbtn--active {
+    background-color: black;
+    color: #fff;
+}
+
+.innertab {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innertab:not(.innertab--active) {
+    display: none;
+}
